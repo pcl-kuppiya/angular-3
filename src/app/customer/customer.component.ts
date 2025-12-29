@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+
+@Component({
+  selector: 'app-customer',
+  standalone: true,
+  imports: [],
+  templateUrl: './customer.component.html',
+  styleUrl: './customer.component.scss'
+})
+export class CustomerComponent {
+  data:string|undefined;
+  constructor(private activatedRoute:ActivatedRoute) {
+  }
+  ngOnInit():void{//
+    this.data=this.activatedRoute.snapshot.paramMap.get('data')!;
+  }
+}

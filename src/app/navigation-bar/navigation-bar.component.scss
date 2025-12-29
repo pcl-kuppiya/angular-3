@@ -1,0 +1,19 @@
+header{
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+button{
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  margin-right: 10px;
+  background-color: brown;
+  color: white;
+  font-weight: bolder;
+}
